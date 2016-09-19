@@ -8,4 +8,4 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - \
     && php -r "unlink('composer-setup.php');" \
     && mv composer.phar /usr/local/bin/composer \
     && chmod +x /usr/local/bin/composer \
-    && npm -g install gulp-cli
+    && npm -g install gulp-cli bower \
