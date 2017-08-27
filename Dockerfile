@@ -7,6 +7,7 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - \
     && /tmp/install-composer.sh \
     && echo 'export PATH=/root/.config/composer/vendor/bin:$PATH' >> /root/.profile \
     && curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash \
-    && export NVM_DIR="/root/.nvm" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" \
+    && export NVM_DIR="/root/.nvm" \
+    && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" \
     && nvm install node \
     && npm -g install gulp-cli bower \
