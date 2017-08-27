@@ -7,5 +7,5 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - \
     && /tmp/install-composer.sh \
     && echo 'export PATH=/root/.config/composer/vendor/bin:$PATH' >> /root/.profile \
     && curl -L https://git.io/n-install | N_PREFIX=/usr/local/n bash -s -- -y \
-    && export PATH=/usr/local/n:$PATH \
+    && export PATH=/usr/local/n/bin:$PATH \
     && npm -g install gulp-cli bower \
