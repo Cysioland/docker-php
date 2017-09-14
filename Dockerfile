@@ -1,4 +1,4 @@
-FROM php:7.0-cli
+FROM php:7.1-cli
 ADD install-composer.sh /tmp/
 ADD .profile /root/
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - \
