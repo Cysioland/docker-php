@@ -11,4 +11,4 @@ RUN apt-get update && apt-get install -y gnupg \
     && docker-php-ext-enable xdebug \
     && /tmp/install-composer.sh \
     && echo 'export PATH=/root/.config/composer/vendor/bin:$PATH' >> /root/.profile \
-    && npm -g install gulp-cli bower \
+    && yarn global add gulp-cli bower \
