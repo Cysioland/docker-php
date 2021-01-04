@@ -1,4 +1,4 @@
-FROM php:7.3-cli
+FROM php:7.4-cli
 ADD install-composer.sh /tmp/
 ADD .profile /root/
 RUN apt-get update && apt-get install -y gnupg \
